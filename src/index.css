@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'MyFont';
-  src: url('./src/assets/fonts/cloud.otf') format('truetype');
+  src: url('/fonts/cloud.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'lufga';
-  src: url('.@/src/assets/fonts/lufgam.ttf') format('truetype');
+  src: url('/fonts/lufgam.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
