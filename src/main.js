@@ -4,12 +4,9 @@ import './index.css';
 
 
 import { createApp } from 'vue'
-import App from './App.vue'
-import mdiVue from 'mdi-vue/v3'      // note `/v3`
-import * as mdijs from '@mdi/js'
+import App from './views/App.vue'
+import router from './router'
 
 const app = createApp(App)
-app.use(mdiVue, {
-  icons: mdijs,
-})
-app.mount('#app')
+  .use(router)  // <-- register the router
+  .mount('#app')

@@ -1,30 +1,25 @@
 <script setup>
 import Icon from 'mdi-vue/v3' 
 import { mdiAccount } from '@mdi/js'
-
+import { useRouter } from 'vue-router'
 import 'primeicons/primeicons.css'
 
 
+const router = useRouter()
+
+
+function goToRegister() {
+  router.push('/register')
+}
+function goToLogin() {
+  router.push('/login')
+}
 </script>
 
 <template>
   <div class="SiteContainer">
-    <header id="header">
-      <div class="header-logo">
-        <img src="/header-logo.svg" alt="Logo">
-      </div>
-      <div id="header-nav">
-        <a href="/">Home</a>
-        <a href="/about">Pricing</a>
-        <a href="/tutoring">Tutoring</a>
-        <a href="/service">Service</a>
-      </div>
-      <div id="header-login">
-        <a href="/signin">Sign in</a>
-        <button id="login-btn" type="button">Login</button>
-      </div>
-    </header>
-
+    
+    
     <div class="middleContainer">
       <div class="leftSideContainer">
         <div class="middleText">
@@ -46,7 +41,7 @@ import 'primeicons/primeicons.css'
 
         </div>
         <div class="leftSideButtonContainer">
-        <button class="leftSideButton">Getting Started</button>
+        <button class="leftSideButton"  @click="$router.push('/register')">Getting Started</button>
       </div>
         </div>
         
